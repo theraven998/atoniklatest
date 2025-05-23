@@ -1,26 +1,55 @@
 {
   "expo": {
-    "name": "atoniklatest",
-    "slug": "atoniklatest",
+    "name": "Atonik",
+    "slug": "Atonik",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "atonik",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./assets/images/pngVacio.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#3c32a8"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.atonik.Atonik",
+      "associatedDomains": [
+        "applinks:go.atonikapp.com",
+        "applinks:go.atonikapp.com"
+      ],
+      "googleServicesFile": "./GoogleService-Info.plist",
+
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": {
+            "scheme": "https",
+            "host": "go.atonikapp.com",
+            "pathPrefix": "/"
+          },
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ],
+      "softwareKeyboardLayoutMode": "pan",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA9NYFSpTJRqoo33bY8aWI27Txag2c0Q2s"
+        }
+      },
+      "googleServicesFile": "./assets/google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.atonik.Atonik"
     },
     "web": {
       "bundler": "metro",
@@ -28,10 +57,23 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-router",
+      "expo-branch",
+      "@react-native-firebase/auth",
+      "@react-native-firebase/app"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false,
+        "expoClientId": "667525490941-68itronpfn22nngiln6kja1lue0ap8el.apps.googleusercontent.com"
+      },
+      "eas": {
+        "projectId": "c07ee56a-7b31-49f6-baee-af96df0750ea"
+      }
     }
   }
 }
