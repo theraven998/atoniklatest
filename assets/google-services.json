@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "667525490941",
+    "project_id": "atonik-proyect",
+    "storage_bucket": "atonik-proyect.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667525490941:android:edc669e523192aa1083694",
+        "android_client_info": {
+          "package_name": "com.atonik.Atonik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667525490941-33md41dk3m35r6ddte2n4tttfj16ip9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.atonik.Atonik",
+            "certificate_hash": "98d9b0f0a22324b7eba9704938d1da99be611303"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEB1jL4Y75Oh7a34Gi8FAiJ0wcIrEJkyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667525490941-ntarennmi34krbomrtaef3an0bcobsf7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.atonik.Atonik"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
